@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDoS Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>DDoS Detection System</h1>
+            <p>Click the button below to simulate traffic and detect potential DDoS attacks.</p>
+        </header>
+
+        <main>
+            <button id="simulateButton" class="simulate-btn">
+                Simulate Traffic
+            </button>
+
+            <div id="loading" class="loading" style="display:none;">
+                Loading...
+            </div>
+
+            <div id="progressBarContainer" class="progress-container" style="display:none;">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+
+            <div id="resultContainer" class="result-container" style="display:none;">
+                <h2>Simulation Results</h2>
+                <p><strong>Accuracy: </strong><span id="accuracy"></span>%</p>
+                <p><strong>Precision: </strong><span id="precision"></span></p>
+                <p><strong>Recall: </strong><span id="recall"></span></p>
+                <p><strong>F1-Score: </strong><span id="f1_score"></span></p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Packets Simulated</th>
+                            <th>Calculated Entropy</th>
+                            <th>Predicted Label</th>
+                            <th>Actual Label</th>
+                        </tr>
+                    </thead>
+                    <tbody id="simulationResults"></tbody>
+                </table>
+
+                <canvas id="accuracyChart" width="400" height="200"></canvas>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Handle button click to simulate traffic
+        $('#simulateButton').click(function() {
+            $('#loading').show();  // Show loading message
+            $('#simulateButton').prop('disabled', true);  // Disable the simulate button
+            $('#progressBarContainer').show();  // Show progress bar
+
+            let progress = 0;
+            $('#progressBar').css('width', progress + '%');  // Set initial progress to 0%
+
+            $.ajax({
+                url: "/simulate",  // Send request to Flask's /simulate route
+                method: "GET",
+                success: function(response) {
+                    $('#loading').hide();  // Hide loading message
+                    $('#simulateButton').prop('disabled', false);  // Re-enable button
+                    $('#progressBarContainer').hide();  // Hide progress bar
+
+                    // Show the result container with the simulation results
+                    $('#resultContainer').show();
+                    
+                    // Extract data from the response
+                    const data = response;
+
+                    // Display accuracy, precision, recall, F1 score
+                    $('#accuracy').text(data.accuracy);
+                    $('#precision').text(data.precision);
+                    $('#recall').text(data.recall);
+                    $('#f1_score').text(data.f1_score);
+
+                    // Render simulation results in the table
+                    let resultsHtml = '';
+                    data.packet_details.forEach(detail => {
+                        resultsHtml += `
+                            <tr>
+                                <td>${detail.packets}</td>
+                                <td>${detail.entropy}</td>
+                                <td>${detail.predicted_label}</td>
+                                <td>${detail.actual_label}</td>
+                            </tr>
+                        `;
+                    });
+
+                    $('#simulationResults').html(resultsHtml);
+
+                    // Create the accuracy chart using Chart.js
+                    const ctx = document.getElementById('accuracyChart').getContext('2d');
+                    new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: ['Round 1', 'Round 2', 'Round 3', 'Round 4', 'Round 5'],
+                            datasets: [{
+                                label: 'Accuracy',
+                                data: [data.accuracy, data.accuracy, data.accuracy, data.accuracy, data.accuracy],  // Use the accuracy for all rounds
+                                borderColor: 'rgba(75, 192, 192, 1)',
+                                fill: false
+                            }]
+                        }
+                    });
+                },
+                error: function(error) {
+                    console.log("Error occurred while simulating:", error);  // Log error if AJAX fails
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+2024-11-21 13:53:58,987 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-21 13:53:58,987 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-21 13:53:58,989 - INFO -  * Restarting with stat
+2024-11-21 13:53:59,793 - WARNING -  * Debugger is active!
+2024-11-21 13:53:59,793 - INFO -  * Debugger PIN: 277-668-739
+2024-11-21 13:55:40,515 - INFO - Simulated 30967 packets. Calculated entropy: 0.0159
+2024-11-21 13:55:40,515 - INFO - Predicted: attack, Actual: attack
+2024-11-21 13:56:10,550 - INFO - Simulated 29112 packets. Calculated entropy: 0.0162
+2024-11-21 13:56:10,550 - INFO - Predicted: attack, Actual: attack
+2024-11-21 13:56:40,583 - INFO - Simulated 30403 packets. Calculated entropy: 0.0161
+2024-11-21 13:56:40,583 - INFO - Predicted: attack, Actual: attack
+2024-11-21 13:57:10,616 - INFO - Simulated 29025 packets. Calculated entropy: 0.0168
+2024-11-21 13:57:10,616 - INFO - Predicted: attack, Actual: attack
+2024-11-21 13:57:40,650 - INFO - Simulated 30698 packets. Calculated entropy: 0.0160
+2024-11-21 13:57:40,650 - INFO - Predicted: attack, Actual: attack
+2024-11-21 13:57:40,664 - INFO - 127.0.0.1 - - [21/Nov/2024 13:57:40] "GET /simulate HTTP/1.1" 200 -
+2024-11-21 13:57:40,708 - INFO - 127.0.0.1 - - [21/Nov/2024 13:57:40] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-11-21 14:07:13,140 - INFO - 127.0.0.1 - - [21/Nov/2024 14:07:13] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2024-11-21 14:08:53,001 - INFO - 127.0.0.1 - - [21/Nov/2024 14:08:53] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-11-21 14:09:35,426 - INFO - Simulated 30797 packets. Calculated entropy: 0.0159
+2024-11-21 14:09:35,426 - INFO - Predicted: attack, Actual: attack
+2024-11-21 14:10:05,450 - INFO - Simulated 29017 packets. Calculated entropy: 0.0163
+2024-11-21 14:10:05,450 - INFO - Predicted: attack, Actual: attack
+2024-11-21 14:10:35,469 - INFO - Simulated 31008 packets. Calculated entropy: 0.0153
+2024-11-21 14:10:35,469 - INFO - Predicted: attack, Actual: attack
+2024-11-21 14:11:05,492 - INFO - Simulated 29504 packets. Calculated entropy: 0.0160
+2024-11-21 14:11:05,492 - INFO - Predicted: attack, Actual: attack
+2024-11-21 14:11:35,519 - INFO - Simulated 32024 packets. Calculated entropy: 0.0154
+2024-11-21 14:11:35,519 - INFO - Predicted: attack, Actual: attack
+2024-11-21 14:11:35,525 - INFO - 127.0.0.1 - - [21/Nov/2024 14:11:35] "GET /simulate HTTP/1.1" 200 -
+2024-11-21 14:11:35,545 - INFO - 127.0.0.1 - - [21/Nov/2024 14:11:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-21 14:50:03,791 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-21 14:50:03,791 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-21 14:50:03,792 - INFO -  * Restarting with stat
+2024-11-21 14:50:04,968 - WARNING -  * Debugger is active!
+2024-11-21 14:50:04,968 - INFO -  * Debugger PIN: 277-668-739
+2024-11-21 14:53:17,849 - INFO - 127.0.0.1 - - [21/Nov/2024 14:53:17] "GET / HTTP/1.1" 200 -
+2024-11-21 14:53:17,915 - INFO - 127.0.0.1 - - [21/Nov/2024 14:53:17] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-11-21 14:53:53,053 - INFO - Simulated 30434 packets. Calculated entropy: 0.0156
+2024-11-21 14:53:53,053 - INFO - Predicted: attack, Actual: attack
+2024-11-21 14:54:23,085 - INFO - Simulated 28907 packets. Calculated entropy: 0.0163
+2024-11-21 14:54:23,085 - INFO - Predicted: attack, Actual: attack
+2024-11-21 14:54:53,111 - INFO - Simulated 28543 packets. Calculated entropy: 0.0165
+2024-11-21 14:54:53,111 - INFO - Predicted: attack, Actual: attack
+2024-11-21 14:55:23,143 - INFO - Simulated 31244 packets. Calculated entropy: 0.0152
+2024-11-21 14:55:23,143 - INFO - Predicted: attack, Actual: attack
+2024-11-21 14:55:53,177 - INFO - Simulated 28119 packets. Calculated entropy: 0.0167
+2024-11-21 14:55:53,177 - INFO - Predicted: attack, Actual: attack
+2024-11-21 14:55:53,198 - INFO - 127.0.0.1 - - [21/Nov/2024 14:55:53] "GET /simulate HTTP/1.1" 200 -
+2024-11-21 15:00:03,814 - INFO -  * Detected change in 'D:\\ddos_detection\\app.py', reloading
+2024-11-21 15:05:54,101 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-21 15:05:54,101 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-21 15:05:54,101 - INFO -  * Restarting with stat
+2024-11-21 15:05:55,283 - WARNING -  * Debugger is active!
+2024-11-21 15:05:55,283 - INFO -  * Debugger PIN: 277-668-739
+2024-11-21 15:06:12,126 - INFO - 127.0.0.1 - - [21/Nov/2024 15:06:12] "GET / HTTP/1.1" 200 -
+2024-11-21 15:06:12,173 - INFO - 127.0.0.1 - - [21/Nov/2024 15:06:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-21 15:06:37,204 - INFO - Simulated 14726 packets. Calculated entropy: 0.0218
+2024-11-21 15:06:37,204 - INFO - Predicted: attack, Actual: attack
+2024-11-21 15:06:57,223 - INFO - Simulated 15236 packets. Calculated entropy: 0.0191
+2024-11-21 15:06:57,223 - INFO - Predicted: attack, Actual: attack
+2024-11-21 15:07:17,248 - INFO - Simulated 15307 packets. Calculated entropy: 0.0190
+2024-11-21 15:07:17,248 - INFO - Predicted: attack, Actual: attack
+2024-11-21 15:07:37,269 - INFO - Simulated 15118 packets. Calculated entropy: 0.0193
+2024-11-21 15:07:37,269 - INFO - Predicted: attack, Actual: attack
+2024-11-21 15:07:57,292 - INFO - Simulated 14590 packets. Calculated entropy: 0.0199
+2024-11-21 15:07:57,292 - INFO - Predicted: attack, Actual: attack
+2024-11-21 15:07:57,292 - INFO - 127.0.0.1 - - [21/Nov/2024 15:07:57] "GET /simulate HTTP/1.1" 200 -
+2024-11-21 16:04:14,622 - INFO - 127.0.0.1 - - [21/Nov/2024 16:04:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-21 16:04:54,878 - INFO - Simulated 15631 packets. Calculated entropy: 0.0187
+2024-11-21 16:04:54,878 - INFO - Predicted: attack, Actual: attack
+2024-11-21 16:05:14,899 - INFO - Simulated 14524 packets. Calculated entropy: 0.0200
+2024-11-21 16:05:14,899 - INFO - Predicted: attack, Actual: attack
+2024-11-21 16:05:34,913 - INFO - Simulated 13599 packets. Calculated entropy: 0.0212
+2024-11-21 16:05:34,913 - INFO - Predicted: attack, Actual: attack
+2024-11-21 16:05:54,932 - INFO - Simulated 13773 packets. Calculated entropy: 0.0210
+2024-11-21 16:05:54,932 - INFO - Predicted: attack, Actual: attack
+2024-11-21 16:06:14,949 - INFO - Simulated 14900 packets. Calculated entropy: 0.0195
+2024-11-21 16:06:14,949 - INFO - Predicted: attack, Actual: attack
+2024-11-21 16:06:14,959 - INFO - 127.0.0.1 - - [21/Nov/2024 16:06:14] "GET /simulate HTTP/1.1" 200 -
+2024-11-21 16:21:48,569 - INFO -  * Detected change in 'D:\\ddos_detection\\app.py', reloading
+2024-11-21 16:33:55,250 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-21 16:33:55,250 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-21 16:33:55,250 - INFO -  * Restarting with stat
+2024-11-21 16:33:56,427 - WARNING -  * Debugger is active!
+2024-11-21 16:33:56,432 - INFO -  * Debugger PIN: 277-668-739
+2024-11-21 16:34:05,896 - INFO - 127.0.0.1 - - [21/Nov/2024 16:34:05] "GET / HTTP/1.1" 200 -
+2024-11-21 16:34:05,980 - INFO - 127.0.0.1 - - [21/Nov/2024 16:34:05] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-21 16:34:29,328 - INFO - Simulated 14357 packets. Entropy: 0.0202
+2024-11-21 16:34:29,328 - INFO - Predicted: attack, Actual: attack
+2024-11-21 16:34:49,355 - INFO - Simulated 16162 packets. Entropy: 0.0181
+2024-11-21 16:34:49,355 - INFO - Predicted: attack, Actual: attack
+2024-11-21 16:35:09,371 - INFO - Simulated 15083 packets. Entropy: 0.0193
+2024-11-21 16:35:09,371 - INFO - Predicted: attack, Actual: attack
+2024-11-21 16:35:29,395 - INFO - Simulated 16636 packets. Entropy: 0.0177
+2024-11-21 16:35:29,395 - INFO - Predicted: attack, Actual: attack
+2024-11-21 16:35:49,418 - INFO - Simulated 15623 packets. Entropy: 0.0187
+2024-11-21 16:35:49,418 - INFO - Predicted: attack, Actual: attack
+2024-11-21 16:35:49,418 - INFO - 127.0.0.1 - - [21/Nov/2024 16:35:49] "GET /simulate HTTP/1.1" 200 -
